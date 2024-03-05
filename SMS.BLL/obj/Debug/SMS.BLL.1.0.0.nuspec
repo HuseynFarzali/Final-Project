@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>SMS.BLL</id>
+    <version>1.0.0</version>
+    <authors>SMS.BLL</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="SMS.Authentication" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="SMS.DAL" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="SMS.Tools" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="AutoMapper" version="13.0.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Authentication.JwtBearer" version="6.0.27" exclude="Build,Analyzers" />
+        <dependency id="System.IdentityModel.Tokens.Jwt" version="6.35.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.BLL\bin\Debug\net6.0\SMS.BLL.dll" target="lib\net6.0\SMS.BLL.dll" />
+  </files>
+</package>

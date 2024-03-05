@@ -1,0 +1,9 @@
+﻿<a class="@Style" id="@DropId" data-bs-toggle="dropdown" href="#" aria-haspopup="true" aria-expanded="false">
+    @ChildContent
+</a>
+
+@code {
+    [Parameter] public string? Style { get; set; }
+    [Parameter, EditorRequired] public string DropId { get; set; } = default!;
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+}

@@ -1,0 +1,411 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.BLL\\SMS.BLL.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.Authentication\\SMS.Authentication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.Authentication\\SMS.Authentication.csproj",
+        "projectName": "SMS.Authentication",
+        "projectPath": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.Authentication\\SMS.Authentication.csproj",
+        "packagesPath": "C:\\Users\\99450\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.Authentication\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\99450\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.DAL\\SMS.DAL.csproj": {
+                "projectPath": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.DAL\\SMS.DAL.csproj"
+              },
+              "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.WebTools\\SMS.WebTools.csproj": {
+                "projectPath": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.WebTools\\SMS.WebTools.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "BCrypt.Net-Core": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.35.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.BLL\\SMS.BLL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.BLL\\SMS.BLL.csproj",
+        "projectName": "SMS.BLL",
+        "projectPath": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.BLL\\SMS.BLL.csproj",
+        "packagesPath": "C:\\Users\\99450\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.BLL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\99450\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.Authentication\\SMS.Authentication.csproj": {
+                "projectPath": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.Authentication\\SMS.Authentication.csproj"
+              },
+              "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.DAL\\SMS.DAL.csproj": {
+                "projectPath": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.DAL\\SMS.DAL.csproj"
+              },
+              "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.Tools\\SMS.Tools.csproj": {
+                "projectPath": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.Tools\\SMS.Tools.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.27, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.35.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.DAL\\SMS.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.DAL\\SMS.DAL.csproj",
+        "projectName": "SMS.DAL",
+        "projectPath": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.DAL\\SMS.DAL.csproj",
+        "packagesPath": "C:\\Users\\99450\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\99450\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.Tools\\SMS.Tools.csproj": {
+                "projectPath": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.Tools\\SMS.Tools.csproj"
+              },
+              "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.WebTools\\SMS.WebTools.csproj": {
+                "projectPath": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.WebTools\\SMS.WebTools.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.22, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.22, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.Tools\\SMS.Tools.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.Tools\\SMS.Tools.csproj",
+        "projectName": "SMS.Tools",
+        "projectPath": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.Tools\\SMS.Tools.csproj",
+        "packagesPath": "C:\\Users\\99450\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.Tools\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\99450\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.WebTools\\SMS.WebTools.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.WebTools\\SMS.WebTools.csproj",
+        "projectName": "SMS.WebTools",
+        "projectPath": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.WebTools\\SMS.WebTools.csproj",
+        "packagesPath": "C:\\Users\\99450\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.WebTools\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\99450\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.Tools\\SMS.Tools.csproj": {
+                "projectPath": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.Tools\\SMS.Tools.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

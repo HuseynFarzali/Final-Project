@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Name": "SMS.API\\SMS.API.csproj",
+        "Action": "Start",
+        "DebugTarget": ""
+      },
+      {
+        "Name": "SMS.App\\SMS.App.csproj",
+        "Action": "Start",
+        "DebugTarget": ""
+      }
+    ]
+  }
+]

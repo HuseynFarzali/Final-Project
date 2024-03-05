@@ -1,0 +1,12 @@
+C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.Tools\bin\Debug\net6.0\SMS.Tools.deps.json
+C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.Tools\bin\Debug\net6.0\SMS.Tools.dll
+C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.Tools\bin\Debug\net6.0\SMS.Tools.pdb
+C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.Tools\obj\Debug\net6.0\SMS.Tools.csproj.AssemblyReference.cache
+C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.Tools\obj\Debug\net6.0\SMS.Tools.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.Tools\obj\Debug\net6.0\SMS.Tools.AssemblyInfoInputs.cache
+C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.Tools\obj\Debug\net6.0\SMS.Tools.AssemblyInfo.cs
+C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.Tools\obj\Debug\net6.0\SMS.Tools.csproj.CoreCompileInputs.cache
+C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.Tools\obj\Debug\net6.0\SMS.Tools.dll
+C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.Tools\obj\Debug\net6.0\refint\SMS.Tools.dll
+C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.Tools\obj\Debug\net6.0\SMS.Tools.pdb
+C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.Tools\obj\Debug\net6.0\ref\SMS.Tools.dll

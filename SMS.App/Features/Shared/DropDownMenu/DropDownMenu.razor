@@ -1,0 +1,10 @@
+﻿
+<ul class="@Style" aria-labelledby="@TriggerDropButtonId">
+    @ChildContent
+</ul>
+
+@code {
+    [Parameter] public string? Style { get; set; }
+    [Parameter, EditorRequired] public string TriggerDropButtonId { get; set; } = default!;
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+}

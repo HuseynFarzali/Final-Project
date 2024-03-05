@@ -1,0 +1,18 @@
+﻿
+<div class="@Style" role="button" @onclick=Navigate>
+    @ChildContent
+</div>
+
+@code {
+    [Inject] public NavigationManager NavManager { get; set; } = default!;
+
+    [Parameter] public string? Style { get; set; }
+    [Parameter, EditorRequired] public string NavigatesTo { get; set; } = default!;
+    [Parameter] public string WithRouteData { get; set; } = "/";
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+
+    protected void Navigate()
+    {
+        NavManager.NavigateTo(NavigatesTo + WithRouteData);
+    }
+}

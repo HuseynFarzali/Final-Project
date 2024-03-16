@@ -14,5 +14,7 @@ namespace SMS.DAL.Data.Entities.Concrete
         public string HashedPassword { get; set; }
         public bool IsAdmin { get; set; } = false;
         public UserType UserType { get; set; } = UserType.None;
+
+        public List<ChatUser>? ChatUsers { get; set; }
     }
 }

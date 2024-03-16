@@ -26,12 +26,116 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Content/Footer/HomeFooterSection.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udGVudFxGb290ZXJcSG9tZUZvb3RlclNlY3Rpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Content/Header/HomeNavbar.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udGVudFxIZWFkZXJcSG9tZU5hdmJhci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Content/Header/Inner Components/AccountModalButton.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udGVudFxIZWFkZXJcSW5uZXIgQ29tcG9uZW50c1xBY2NvdW50TW9kYWxCdXR0b24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Content/Header/Inner Components/BrandIcon.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udGVudFxIZWFkZXJcSW5uZXIgQ29tcG9uZW50c1xCcmFuZEljb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Content/Header/Inner Components/NavigationMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udGVudFxIZWFkZXJcSW5uZXIgQ29tcG9uZW50c1xOYXZpZ2F0aW9uTWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Content/Header/Inner Components/NavigationSection.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udGVudFxIZWFkZXJcSW5uZXIgQ29tcG9uZW50c1xOYXZpZ2F0aW9uU2VjdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Content/Header/Inner Components/SearchForm.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udGVudFxIZWFkZXJcSW5uZXIgQ29tcG9uZW50c1xTZWFyY2hGb3JtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Content/Header/Inner Components/VerticalCategoriesMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udGVudFxIZWFkZXJcSW5uZXIgQ29tcG9uZW50c1xWZXJ0aWNhbENhdGVnb3JpZXNNZW51LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Content/Header/MainNavbar.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29udGVudFxIZWFkZXJcTWFpbk5hdmJhci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Content/Main/HomeInstructorsSection.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udGVudFxNYWluXEhvbWVJbnN0cnVjdG9yc1NlY3Rpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Content/Main/HomeJarallaxSection.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udGVudFxNYWluXEhvbWVKYXJhbGxheFNlY3Rpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Content/Main/InnerComponents/HomeCategoriesSection.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udGVudFxNYWluXElubmVyQ29tcG9uZW50c1xIb21lQ2F0ZWdvcmllc1NlY3Rpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Content/Main/InnerComponents/HomeCoursesSection.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udGVudFxNYWluXElubmVyQ29tcG9uZW50c1xIb21lQ291cnNlc1NlY3Rpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Content/Main/InnerComponents/HomeHeroSection.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udGVudFxNYWluXElubmVyQ29tcG9uZW50c1xIb21lSGVyb1NlY3Rpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Content/Main/InnerComponents/TeacherCard.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udGVudFxNYWluXElubmVyQ29tcG9uZW50c1xUZWFjaGVyQ2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Content/Modals/HomeModals.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udGVudFxNb2RhbHNcSG9tZU1vZGFscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Content/Modals/Inner Components/LoginModalForm.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udGVudFxNb2RhbHNcSW5uZXIgQ29tcG9uZW50c1xMb2dpbk1vZGFsRm9ybS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Content/Modals/Inner Components/RegisterModalForm.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29udGVudFxNb2RhbHNcSW5uZXIgQ29tcG9uZW50c1xSZWdpc3Rlck1vZGFsRm9ybS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Features/Account/AccountPanelPage.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcQWNjb3VudFxBY2NvdW50UGFuZWxQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Features/Account/ChatTest.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcQWNjb3VudFxDaGF0VGVzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Features/Courses/CourseCard.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcQ291cnNlc1xDb3Vyc2VDYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Features/Courses/CourseDetailPage.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcQ291cnNlc1xDb3Vyc2VEZXRhaWxQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Features/Courses/CoursesCarousel.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcQ291cnNlc1xDb3Vyc2VzQ2Fyb3VzZWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Features/Courses/CoursesPage.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcQ291cnNlc1xDb3Vyc2VzUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Features/Courses/InnerComponents/CoursesPageControlBar.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcQ291cnNlc1xJbm5lckNvbXBvbmVudHNcQ291cnNlc1BhZ2VDb250cm9sQmFyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Features/Courses/InnerComponents/CoursesPageHeader.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcQ291cnNlc1xJbm5lckNvbXBvbmVudHNcQ291cnNlc1BhZ2VIZWFkZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Features/Home/HomePage.razor]
 build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcSG9tZVxIb21lUGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Features/Shared/CollapseButton/CollapseButton.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcU2hhcmVkXENvbGxhcHNlQnV0dG9uXENvbGxhcHNlQnV0dG9uLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Features/Shared/DropButton/DropButton.razor]
@@ -42,8 +146,40 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcU2hhcmVkXERyb3BEb3duTWVudVxEcm9wRG93bk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Features/Shared/Loading/LoadingComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcU2hhcmVkXExvYWRpbmdcTG9hZGluZ0NvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Features/Shared/ModalButton/ModalButton.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcU2hhcmVkXE1vZGFsQnV0dG9uXE1vZGFsQnV0dG9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Features/Shared/NavButton/NavButton.razor]
 build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcU2hhcmVkXE5hdkJ1dHRvblxOYXZCdXR0b24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Features/Teachers/InnerComponents/TeachersPageControlBar.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcVGVhY2hlcnNcSW5uZXJDb21wb25lbnRzXFRlYWNoZXJzUGFnZUNvbnRyb2xCYXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Features/Teachers/InnerComponents/TeachersPageHeader.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcVGVhY2hlcnNcSW5uZXJDb21wb25lbnRzXFRlYWNoZXJzUGFnZUhlYWRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Features/Teachers/TeacherDetailPage.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcVGVhY2hlcnNcVGVhY2hlckRldGFpbFBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Features/Teachers/TeachersPage.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcVGVhY2hlcnNcVGVhY2hlcnNQYWdlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Features/Test/Test.razor]
+build_metadata.AdditionalFiles.TargetPath = RmVhdHVyZXNcVGVzdFxUZXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Layouts/HomeLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0c1xIb21lTGF5b3V0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/99450/Desktop/BackEnd_Code_Academy/Student Management System/SMS.App/Layouts/MainLayout.razor]

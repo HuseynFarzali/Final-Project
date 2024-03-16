@@ -1,6 +1,30 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Content\\Main\\HomeInstructorsSection.razor.js",
+      "PackagePath": "staticwebassets\\Content\\Main\\HomeInstructorsSection.razor.js"
+    },
+    {
+      "Id": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Content\\Main\\HomeJarallaxSection.razor.js",
+      "PackagePath": "staticwebassets\\Content\\Main\\HomeJarallaxSection.razor.js"
+    },
+    {
+      "Id": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Content\\Main\\InnerComponents\\HomeCoursesSection.razor.js",
+      "PackagePath": "staticwebassets\\Content\\Main\\InnerComponents\\HomeCoursesSection.razor.js"
+    },
+    {
+      "Id": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Content\\Main\\InnerComponents\\HomeHeroSection.razor.js",
+      "PackagePath": "staticwebassets\\Content\\Main\\InnerComponents\\HomeHeroSection.razor.js"
+    },
+    {
+      "Id": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Features\\Courses\\InnerComponents\\CoursesPageControlBar.razor.js",
+      "PackagePath": "staticwebassets\\Features\\Courses\\InnerComponents\\CoursesPageControlBar.razor.js"
+    },
+    {
+      "Id": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Features\\Teachers\\TeacherDetailPage.razor.js",
+      "PackagePath": "staticwebassets\\Features\\Teachers\\TeacherDetailPage.razor.js"
+    },
+    {
       "Id": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\bin\\Debug\\net6.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
@@ -635,6 +659,14 @@
     {
       "Id": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\wwwroot\\assets\\img\\patterns\\pattern-2.svg",
       "PackagePath": "staticwebassets\\assets\\img\\patterns\\pattern-2.svg"
+    },
+    {
+      "Id": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\wwwroot\\assets\\img\\photos\\no-background.png",
+      "PackagePath": "staticwebassets\\assets\\img\\photos\\no-background.png"
+    },
+    {
+      "Id": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\wwwroot\\assets\\img\\photos\\no-user.webp",
+      "PackagePath": "staticwebassets\\assets\\img\\photos\\no-user.webp"
     },
     {
       "Id": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\wwwroot\\assets\\img\\photos\\photo-1.jpg",

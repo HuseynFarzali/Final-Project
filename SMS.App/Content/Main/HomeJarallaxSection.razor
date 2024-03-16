@@ -1,0 +1,32 @@
+﻿@implements IAsyncDisposable
+
+<!-- CALL ACTION
+================================================== -->
+<section class="py-6 py-md-12 jarallax" style="background-image: url(assets/img/covers/cover-5.jpg)">
+    <div class="container text-center py-xl-9 text-capitalize" data-aos="fade-up">
+        <h1 class="text-white text-uppercase">ENHANCE YOUR SKILLS WITH BEST ONLINE COURSES</h1>
+        <div class="font-size-lg mb-md-6 mb-4 text-white">STARTING ONLINE LEARNING</div>
+        <div class="mx-auto">
+            <a href="#" class="btn btn-sienna btn-x-wide lift d-inline-block text-white">GET STARTED NOW</a>
+        </div>
+    </div>
+</section>
+
+@code {
+    [Inject] public IJSRuntime JsRuntime { get; set; } = default!;
+
+    private IJSObjectReference? JarallaxModule;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        JarallaxModule = await JsRuntime.InvokeAsync<IJSObjectReference>
+        ("import", "./Content/Main/HomeJarallaxSection.razor.js");
+        await JarallaxModule.InvokeVoidAsync("jarallaxInit");
+    }
+
+    async ValueTask IAsyncDisposable.DisposeAsync()
+    {
+        if (JarallaxModule is not null)
+            await JarallaxModule.DisposeAsync();
+    }
+}

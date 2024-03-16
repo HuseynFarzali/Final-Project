@@ -1,0 +1,104 @@
+﻿@using Blazored.LocalStorage
+@using Blazored.SessionStorage
+@using SMS.App.Features.Account
+@using SMS.App.Features.Home
+@using SMS.App.Models
+@using SMS.App.Tools
+@using System.Net.Http.Headers
+
+<!-- Form Sign-in -->
+<EditForm EditContext="editContext" OnValidSubmit=Login class="mb-5">
+    <DataAnnotationsValidator />
+
+    <!-- Email -->
+    <div class="form-group mb-5">
+        <label for="modalSigninEmail">
+            Email
+        </label>
+        <InputText @bind-Value="_loginModel.Email" type="email" class="form-control" id="modalSigninEmail" placeholder="Your email" />
+        <ValidationMessage For="() => _loginModel.Email" style="color:red; font-size:12.5px;" />
+    </div>
+
+    <!-- Password -->
+    <div class="form-group mb-5">
+        <label for="modalSigninPassword">
+            Password
+        </label>
+        <InputText @bind-Value="_loginModel.Password" type="password" class="form-control" id="modalSigninPassword" placeholder="Your password" />
+        <ValidationMessage For="() => _loginModel.Password" style="color:red; font-size:12.5px;" />
+    </div>
+
+    <div class="d-flex align-items-center mb-5 font-size-sm">
+        <div class="form-check">
+            <InputCheckbox @bind-Value="rememberMe" class="form-check-input text-gray-800" id="autoSizingCheck" />
+            <label class="form-check-label text-gray-800" for="autoSizingCheck">
+                Remember me
+            </label>
+        </div>
+
+        <div class="ms-auto">
+            <a class="text-gray-800" data-bs-toggle="collapse" href="#collapseForgotPassword" role="button" aria-expanded="false" aria-controls="collapseForgotPassword">Forgot Password</a>
+        </div>
+    </div>
+
+    <!-- Submit -->
+    <button class="btn btn-block btn-primary @(editContext.Validate() ? "" : "disabled")" type="submit">
+        Login
+    </button>
+    
+    @if (_loginCall.IsFailed)
+    {
+        <p class="text-danger text-[12px]">Login failed. Please try again.</p>
+    }
+</EditForm>
+
+@code {
+    [Inject] public HttpClient Api { get; set; } = default!;
+    [Inject] public ILocalStorageService LocalStorage { get; set; } = default!;
+    [Inject] public ISessionStorageService SessionStorage { get; set; } = default!;
+    [Inject] NavigationManager NavManager { get; set; } = default!;
+
+    private EditContext editContext = default!;
+    private LoginRequestModel _loginModel = new();
+    private bool rememberMe = false;
+
+    private CallResultString _loginCall = new();
+    private CallResult<AppUser> _loggedInUserCall = new();
+
+    protected override void OnInitialized()
+    {
+        editContext = new(_loginModel);
+    }
+
+    public async Task Login()
+    {
+        await _loginCall.DiagnoseAsync(await Api.PostAsJsonAsync("/api/auth/login", _loginModel));
+
+        Api.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", _loginCall.StringData!);
+        await _loggedInUserCall.DiagnoseAsync(await Api.GetAsync("/api/auth/current-user"));
+
+        if (!_loginCall.IsFailed)
+        {
+            if (rememberMe)
+            {
+                await LocalStorage.SetItemAsStringAsync("token", _loginCall.StringData!);
+
+                if (_loggedInUserCall.IsFailed is false)
+                {
+                    await LocalStorage.SetItemAsync<AppUser>("current-user", _loggedInUserCall.Data!);
+                }
+            }
+            else
+            {
+                await SessionStorage.SetItemAsStringAsync("token", _loginCall.StringData!);
+
+                if (_loggedInUserCall.IsFailed is false)
+                {
+                    await SessionStorage.SetItemAsync<AppUser>("current-user", _loggedInUserCall.Data!);
+                }
+            }
+
+            NavManager.NavigateTo("", forceLoad: true);
+        }
+    }
+}

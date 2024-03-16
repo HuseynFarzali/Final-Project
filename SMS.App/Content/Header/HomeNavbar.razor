@@ -1,0 +1,45 @@
+﻿@using SMS.App.Content.Header.Inner_Components
+@using SMS.App.Features.Categories
+@using SMS.App.Features.Home
+@using SMS.App.Features.Shared
+@using SMS.App.Features.Shared.CollapseButton
+@using SMS.App.Features.Shared.DropButton
+@using SMS.App.Features.Shared.DropDownMenu
+@using SMS.App.Features.Shared.NavButton
+@using SMS.App.Models
+@using SMS.App.Tools
+<!-- NAVBAR
+================================================== -->
+<header class="navbar navbar-expand-xl navbar-dark">
+    <div class="container-fluid">
+
+        <!-- Brand -->
+        <BrandIcon />
+
+        <!-- Vertical Menu -->
+        <VerticalCategoriesMenu />
+
+        <!-- Search -->
+        <SearchForm />
+
+        <!-- Collapse -->
+        <NavigationSection />
+
+        <!-- Account-->
+        <AccountModalButton TextWhite=true />
+
+        <!-- Navbar Minimized Button -->
+        <CollapseButton Style="navbar-toggler ms-4 ms-md-5 shadow-none bg-teal text-white icon-xs p-0 outline-0 h-40p w-40p d-flex d-xl-none place-flex-center" TargetId="navbarCollapse">
+            <!-- Icon -->
+            <svg width="25" height="17" viewBox="0 0 25 17" xmlns="http://www.w3.org/2000/svg">
+                <rect width="25" height="2" fill="currentColor" />
+                <rect y="8" width="15" height="2" fill="currentColor" />
+                <rect y="16" width="20" height="2" fill="currentColor" />
+            </svg>
+        </CollapseButton>
+    </div>
+</header>
+
+@code {
+
+}

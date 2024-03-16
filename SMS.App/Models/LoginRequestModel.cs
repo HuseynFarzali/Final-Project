@@ -12,7 +12,6 @@ namespace SMS.App.Models
         [Required(ErrorMessage = "Please provide a password.")]
         [PasswordPropertyText]
         [DataType(DataType.Password)]
-        [StringLength(256, MinimumLength = 8, ErrorMessage = "Ensure that password length is between 8 and 256")]
         public string Password { get; set; }
     }
 }

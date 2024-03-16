@@ -1,0 +1,7 @@
+— Create Pages of:
+	about;
+	community;
+	account-management;
+
+	student panel;
+	teacher panel [panel simply]

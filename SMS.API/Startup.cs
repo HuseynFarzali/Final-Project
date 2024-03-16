@@ -1,10 +1,13 @@
 ﻿using AutoMapper;
 using AutoMapper.Internal;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query.Internal;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.Net.Http.Headers;
+using SMS.API.Hubs;
 using SMS.Authentication.Setting_Models;
 using SMS.BLL.Auto_Mapper;
 using SMS.BLL.Services.Contracts;
@@ -64,7 +67,19 @@ namespace SMS.API
                 };
             });
 
-            services.AddAuthorization();
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("Binded Users Only", policyBuilder =>
+                {
+                    policyBuilder.RequireClaim("userType", new[] { "Student", "Teacher" });
+                });
+            });
+
+            services.AddSignalR();
+            services.AddResponseCompression(options =>
+            {
+                options.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(new[] { "application/octet-stream" });
+            });
         }
 
         public override void ConfigureApp(WebApplication app, IWebHostEnvironment env)
@@ -94,6 +109,7 @@ namespace SMS.API
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<ChatHub>("/chathub");
             });
         }
     }

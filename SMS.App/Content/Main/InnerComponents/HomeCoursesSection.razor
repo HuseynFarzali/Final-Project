@@ -1,0 +1,108 @@
+﻿@using SMS.App.Features.Courses
+@using SMS.App.Models
+@using SMS.App.Tools
+
+<!-- FEATURED PRODUCT
+================================================== -->
+<section class="pt-5 pb-9 py-md-11 bg-white">
+    <div class="container">
+        <div class="text-center mb-5 mb-md-8">
+            <h1 class="mb-1">FEATURED COURSES</h1>
+            <p class="font-size-lg text-capitalize">Discover your perfect program in our courses.</p>
+        </div>
+
+        <EditForm Model="_filterOptions" class="row mb-8 w-xl-80 mx-xl-auto">
+            <div class="col-md mb-4 mb-md-0 d-lg-flex align-items-center justify-content-around">
+                <label class="me-lg-4 mb-lg-0">Filter By</label>
+                <div class="row">
+                    <div class="col-md-auto mb-4 mb-lg-0">
+                        <p class="text-black text-10" style="margin-bottom:2px;">Category Name</p>
+                        <InputSelect @bind-Value="_filterOptions.FilterByCategoryName" @onchange=FilterCourses class="form-select form-select-sm ps-5 text-primary shadow fw-medium" data-choices>
+                            <option selected value="none">None</option>
+                            @if (_categoriesCall.IsFailed is false && _categoriesCall.Data is not null)
+                            {
+                                @foreach (var categoryName in _categoriesCall.Data!.Select(category => category.Name))
+                                {
+                                    <option value="@categoryName">@categoryName</option>
+                                }
+                            }
+                        </InputSelect>
+                    </div>
+                    <div class="col-md-auto mb-4 mb-lg-0">
+                        <p class="text-black text-10" style="margin-bottom:2px;">Instructor Name</p>
+                        <InputSelect @bind-Value="_filterOptions.FilterByTeacherName" class="form-select form-select-sm ps-5 text-primary shadow fw-medium" data-choices>
+                            <option value="none">None</option>
+                            @if (_teachersCall.IsFailed is false && _teachersCall.Data is not null)
+                            {
+                                @foreach (var teacherName in _teachersCall.Data!.Select(teacher => teacher.Fullname))
+                                {
+                                    <option value="@teacherName">@teacherName</option>
+                                }
+                            }
+                        </InputSelect>
+                    </div>
+                </div>
+                <div class="row">
+                    <button class="btn btn-outline-primary px-6 py-1 mt-5 overlay lift" type="submit" @onclick=FilterCourses>Filter</button>
+                </div>
+            </div>
+        </EditForm>
+        @if (_coursesCall.IsFailed is false && _filterCoursesResult is not null)
+        {
+            <div class="flickity-carousel-courses mx-n4 mb-3">
+                <CoursesCarousel Courses="_filterCoursesResult"/>
+            </div>
+        }
+    </div>
+</section>
+
+@code {
+    [Inject] public HttpClient Api { get; set; } = default!;
+    
+
+    private FilterOptions _filterOptions = new();
+    private CallResult<IEnumerable<CourseDto>> _coursesCall = new();
+    private CallResult<IEnumerable<CategoryDto>> _categoriesCall = new();
+    private CallResult<IEnumerable<TeacherDto>> _teachersCall = new();
+    private IEnumerable<CourseDto>? _filterCoursesResult;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await _categoriesCall.DiagnoseAsync(await Api.GetAsync("/api/categories/all"));
+        await _coursesCall.DiagnoseAsync(await Api.GetAsync("/api/courses/all"));
+        await _teachersCall.DiagnoseAsync(await Api.GetAsync("/api/teachers/all"));
+
+        if (!_coursesCall.IsFailed)
+        {
+            _filterCoursesResult = _coursesCall.Data!;
+        }
+    }
+
+    private void FilterCourses()
+    {
+        _filterCoursesResult = _coursesCall.Data!;
+
+        if (_filterOptions.FilterByCategoryName is not "none")
+        {
+            _filterCoursesResult = _filterCoursesResult.Where(
+                course => course.Category?.Name == _filterOptions.FilterByCategoryName);
+        }
+        if (_filterOptions.FilterByTeacherName is not "none")
+        {
+            _filterCoursesResult = _filterCoursesResult.Where(course => course.InstructedTeachers!.Any(
+                teacher => teacher.Name.Contains(_filterOptions.FilterByTeacherName)
+             || teacher.Fullname.Contains(_filterOptions.FilterByTeacherName)
+             || teacher.Surname.Contains(_filterOptions.FilterByTeacherName)));
+        }
+
+        _filterCoursesResult = _filterCoursesResult.Take(6);
+        StateHasChanged();
+    }
+
+    private class FilterOptions
+    {
+        public string FilterByCategoryName { get; set; } = "none";
+        public string FilterByTeacherName { get; set; } = "none";
+        public string SortBy { get; set; } = "none";
+    }
+}

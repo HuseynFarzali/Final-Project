@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.EntityFrameworkCore.Query;
 using SMS.BLL.Data_Transfer_Objects;
 using SMS.BLL.Services.Contracts;
@@ -20,42 +21,79 @@ namespace SMS.API.Controllers
             _courseCrudService = courseCrudService;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetAll([FromQuery] bool detailed = false)
+        [HttpGet("all")]
+        public async Task<IActionResult> GetAll()
         {
-            IEnumerable<CourseDto>? courseDtos;
+            var courseDtos = await _courseCrudService.GetRange(
+                includePathQuery: query => query
+                .Include(course => course.CourseStudents)!
+                    .ThenInclude(cs => cs.Student)
+                .Include(course => course.CourseTeachers)!
+                    .ThenInclude(ct => ct.Teacher)
+                .Include(course => course.CourseModules)!
+                    .ThenInclude(cm => cm.Module)!
+                        .ThenInclude(module => module!.LessonModules)!
+                            .ThenInclude(lm => lm.Lesson)!,
 
-            if (detailed)
-                courseDtos = await _courseCrudService.GetRange(includePathQuery: query => query.Include(course => course.CourseStudents).ThenInclude(cs => cs.Student), predicate: course => !course.IsDeleted);
-
-            else courseDtos = await _courseCrudService.GetRange(predicate: course => !course.IsDeleted);
+                predicate: course => !course.IsDeleted);
 
             return Ok(courseDtos);
         }
 
-        [HttpGet("paginate")]
-        public async Task<IActionResult> GetRange(
-            [FromQuery] bool detailed = false, [FromQuery] int? take = null, [FromQuery] int? skip = null)
+        [HttpGet("{id:int}")]
+        public async Task<IActionResult> Get([FromRoute] int id)
         {
-            IEnumerable<CourseDto>? courseDtos;
+            var course = await _courseCrudService.Get(
+                id: id,
+                includePathQuery: query => query
+                .Include(course => course.CourseStudents)!
+                    .ThenInclude(cs => cs.Student)
+                .Include(course => course.CourseTeachers)!
+                    .ThenInclude(ct => ct.Teacher)!
+                .Include(course => course.CourseModules)!
+                    .ThenInclude(cm => cm.Module)!);
 
-            if (detailed)
-                courseDtos = await _courseCrudService.GetRange(includePathQuery: query => query.Include(course => course.CourseStudents).ThenInclude(cs => cs.Student), predicate: course => !course.IsDeleted);
+            return Ok(course);
+        }
 
-            else courseDtos = await _courseCrudService.GetRange(predicate: course => !course.IsDeleted);
+        [HttpPost]
+        public async Task<IActionResult> Post([FromBody] CourseCreateDto dto)
+        {
+            if (ModelState.IsValid is false)
+                return BadRequest(ModelState);
 
-            var cachedResults = courseDtos;
-            if (skip.HasValue)
-            {
-                cachedResults = courseDtos.Skip(skip.Value);
-            }
+            await _courseCrudService.Add(dto);
+            return Ok();
+        }
 
-            if (take.HasValue)
-            {
-                cachedResults = courseDtos.Take(take.Value);
-            }
+        [HttpPost("all")]
+        public async Task<IActionResult> Post([FromBody] IEnumerable<CourseCreateDto> dtos)
+        {
+            if (ModelState.IsValid is false)
+                return BadRequest(ModelState);
 
-            return Ok(cachedResults);
+            await _courseCrudService.AddRange(dtos);
+            return Ok();
+        }
+
+        [HttpPut("{id:int}")]
+        public async Task<IActionResult> Put([FromRoute] int id, [FromBody] CourseUpdateDto dto)
+        {
+            if (ModelState.IsValid is false)
+                return BadRequest(ModelState);
+
+            await _courseCrudService.Update(id, dto);
+            return Ok();
+        }
+
+        [HttpDelete("{id:int}")]
+        public async Task<IActionResult> Delete([FromRoute] int id)
+        {
+            if (ModelState.IsValid is false)
+                return BadRequest(ModelState);
+
+            await _courseCrudService.Delete(id);
+            return Ok();
         }
     }
 }

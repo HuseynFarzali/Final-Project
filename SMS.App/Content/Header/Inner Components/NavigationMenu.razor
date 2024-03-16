@@ -1,0 +1,64 @@
+﻿@using SMS.App.Features.Categories
+@using SMS.App.Features.Courses
+@using SMS.App.Features.Home
+@using SMS.App.Features.Shared.DropButton
+@using SMS.App.Features.Shared.DropDownMenu
+@using SMS.App.Features.Shared.NavButton
+@using SMS.App.Models
+@using SMS.App.Tools
+<!-- Navigation -->
+<ul class="navbar-nav ms-auto">
+    <li class="nav-item dropdown dropdown-full-width">
+        <NavButton Style="nav-link dropdown-toggle px-xl-4 text-uppercase" NavigatesTo="@HomeLink.HomePathRelative">
+            Home
+        </NavButton>
+
+    </li>
+    <li class="nav-item dropdown">
+
+        <DropButton Style="nav-link dropdown-toggle px-xl-4 text-uppercase" DropId="navbarCourses">
+            Courses
+        </DropButton>
+
+        <DropDownMenu Style="dropdown-menu border-xl shadow-none dropdown-menu-xs" TriggerDropButtonId="navbarCourses">
+                <div class="row gx-0">
+                    <div class="col-md-4">
+                        @if (_coursesCall.IsFailed is false)
+                        {
+                            if (_coursesCall.Processing)
+                            {
+                                <p class="text-info">Loading...</p>
+                            }
+                            else
+                            {
+                                if (_coursesCall.Data is not null || _coursesCall.Data!.Count() != 0)
+                                {
+                                    foreach (var course in _coursesCall.Data!)
+                                    {
+                                        <NavButton Style="dropdown-item" NavigatesTo="@(CoursesLink.CoursesPathRelative + $"/{course.Id}")">
+                                            @course.Name
+                                        </NavButton>
+                                    }
+                                }
+                            }
+                        }
+                        else
+                        {
+                            <p class="text-danger">Problem occured.</p>
+                        }
+                    </div>
+                </div>
+        </DropDownMenu>
+    </li>
+</ul>
+
+@code {
+    [Inject] public HttpClient Api { get; set; } = default!;
+
+    private CallResult<IEnumerable<CourseDto>> _coursesCall = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await _coursesCall.DiagnoseAsync(await Api.GetAsync("/api/categories/all"));
+    }
+}

@@ -15,6 +15,9 @@ namespace SMS.DAL.Data.Entities.Concrete
 
         public List<Course>? Courses { get; set; }
 
+        public int? BackgroundImageId { get; set; }
+        public Image? BackgroundImage { get; set; }
+
         public DateTime? CreatedAt { get; set; }
         public DateTime? UpdatedAt { get; set; }
         public string? CreatedBy { get; set; }

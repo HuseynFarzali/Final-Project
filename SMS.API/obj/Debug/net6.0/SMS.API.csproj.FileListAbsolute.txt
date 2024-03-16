@@ -63,3 +63,4 @@ C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.API\bi
 C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.API\bin\Debug\net6.0\BCrypt.Net-Core.dll
 C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.API\bin\Debug\net6.0\SMS.Authentication.dll
 C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.API\bin\Debug\net6.0\SMS.Authentication.pdb
+C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.API\obj\Debug\net6.0\SMS.API.sourcelink.json

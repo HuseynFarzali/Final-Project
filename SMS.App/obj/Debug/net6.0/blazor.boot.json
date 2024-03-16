@@ -1,7 +1,7 @@
 {
   "entryAssembly": "SMS.App",
   "resources": {
-    "hash": "sha256-s066gjEV3NGgv1JNU5QWjiHHZ/s9YPGl7ethxjB2+bc=",
+    "hash": "sha256-d8ruy3JVSACyUP37LWRG08jcjt1UooOUNNDXuy3Sm9I=",
     "runtime": {
       "dotnet.6.0.27.ugig3gi79a.js": "sha256-26GREQBtzf9waPgLefTus1ODJdcs93wyAEl2cY4aiD0=",
       "dotnet.timezones.blat": "sha256-Hu3yTR07LZhOqoVr6q2tVZ2tv621ulhIVgZRupSxU6A=",
@@ -12,16 +12,24 @@
     },
     "assembly": {
       "Blazored.LocalStorage.dll": "sha256-lAGIyP65K8gc+7vvUYMTCNZJaXJtiHqSimcfhpcBOuQ=",
+      "Blazored.SessionStorage.dll": "sha256-8omPQw4xdRqYHJpY/wBGksRDTLeBSaRQ5SyAkR2ABLU=",
       "Microsoft.AspNetCore.Authorization.dll": "sha256-rxaMcq8hV3Ghq02xdjTphg+CcwUa93/pNhkQdRfzyP4=",
       "Microsoft.AspNetCore.Components.dll": "sha256-kW7qln6WGTpNE25zoDfBRy2OuCjZWR1Hstx7LCE48C8=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-xw7tNvIBo4FWNJQJBMuk+8uZDuj3vDyphmczrOgyavo=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-a+IJ8BvCdjB5hlGJeNqR+G95rAIWHMybF2EMBdm/vrI=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-7x73BzjqUuWXzBn+P+7/uEdoqCt+9CJNMg1jSYwspgk=",
+      "Microsoft.AspNetCore.Connections.Abstractions.dll": "sha256-nZsxruZGZ3Kk6CApkVbE+CsbP8sWUyMy3bOO9qoTRrQ=",
       "Microsoft.AspNetCore.Cors.dll": "sha256-GY4482RVrls9np9jcvAekQI4DwI3Ftzf1xGUkHdd4I0=",
       "Microsoft.AspNetCore.Http.Abstractions.dll": "sha256-XILn5gSODvEgQvsGqzjePulASdWoh7JPqaoUBVm3LXg=",
+      "Microsoft.AspNetCore.Http.Connections.Client.dll": "sha256-0HWa1zNcwPb4b5wxdLn6dUZOdtWq9ZQ6+1WB2n+TMnE=",
+      "Microsoft.AspNetCore.Http.Connections.Common.dll": "sha256-0aCEXAUvZaqWbSBmPDmXFrc9cgiOWhVsej6Cadz7/s8=",
       "Microsoft.AspNetCore.Http.Extensions.dll": "sha256-RFAcZkQGFOJTqNGWDCEV+ylY1E2Y5SwGkxY67mw+5Ig=",
       "Microsoft.AspNetCore.Http.Features.dll": "sha256-lqyz9AcejaOhutjZE7Ek6lKEg/oaO26EmSVM1DwlEfg=",
       "Microsoft.AspNetCore.Metadata.dll": "sha256-Hm7vxKjXU5L4mgBrz4rDl1zdhi9ME4On+74S2qk4IWg=",
+      "Microsoft.AspNetCore.SignalR.Client.dll": "sha256-vtK/YZa4vbO1Gj2k8/KVQcgEeAipCZ3MaelVWxmpKOU=",
+      "Microsoft.AspNetCore.SignalR.Client.Core.dll": "sha256-ry4PpnOHHUZRjw3ezHWN4cNLbxn+27Hn/5g7OIc3gAI=",
+      "Microsoft.AspNetCore.SignalR.Common.dll": "sha256-b/dxTjaJMigRB/Ov77OOoXnAyCv0A8dp+P46Z7B6VTM=",
+      "Microsoft.AspNetCore.SignalR.Protocols.Json.dll": "sha256-efMld5ALjBc4RAM/+kTn1lKVKfvD4PtECcXDt5GqjFc=",
       "Microsoft.Extensions.Configuration.dll": "sha256-c8yYhfrOBLEnOBglLTu9peXSbJDwFpuT4UQiXSv28Og=",
       "Microsoft.Extensions.Configuration.Abstractions.dll": "sha256-5Otet+KKVUjNkE/hqcNWmt75H1K2VNuKPFagpRd6Ces=",
       "Microsoft.Extensions.Configuration.Binder.dll": "sha256-wNKhG3Ovx8jqxbscz2AALlsTLfI6GL2dyDhe63mSsoM=",
@@ -29,6 +37,7 @@
       "Microsoft.Extensions.Configuration.Json.dll": "sha256-R28/ywLWxIcFxKtDIj0IxC+bXi4urX6BHeLL24R+vTQ=",
       "Microsoft.Extensions.DependencyInjection.dll": "sha256-E+EQglKrE9ZXpnxrlzjqNQume4drxQ5JM68M0uAigAE=",
       "Microsoft.Extensions.DependencyInjection.Abstractions.dll": "sha256-nM2DA1GqKLxoPU+NHO/Z5yQWH5ctJb+2Tu5b9VxIxeM=",
+      "Microsoft.Extensions.Features.dll": "sha256-LkGMkv/y8f5hgICEAgOR6ptv5neTUiCwaEcCoUknpnQ=",
       "Microsoft.Extensions.FileProviders.Abstractions.dll": "sha256-7PzvEcQvpK1c8tTX9VPI8AF+XrekqbAytNBQXJjvTvQ=",
       "Microsoft.Extensions.FileProviders.Physical.dll": "sha256-sXujvGMZDgBBZ9HqfcEq9XsM0pvwyhPt60NA9qLDzGI=",
       "Microsoft.Extensions.FileSystemGlobbing.dll": "sha256-viiXOG0fwhWobT0TQ1ZOJiZBdRvYRlWbDtjz+6d8sQI=",
@@ -207,10 +216,10 @@
       "mscorlib.dll": "sha256-Ub61T08cmIsx8jHdkPjwZqxKIA5MkRMzxFZ6bfRzsQE=",
       "netstandard.dll": "sha256-wKCgBknfB47bayRyJuAX90jCUZRARgJyM9BU3yPC25o=",
       "System.Private.CoreLib.dll": "sha256-Szu5RxgPEPe1xT34BtNc9Meh5TEbyk/u70S2iWzi+co=",
-      "SMS.App.dll": "sha256-ADQj2aMswuf1U8jC23nyurllUq7p6OORGFrxRlPpqoE="
+      "SMS.App.dll": "sha256-kIvlaQyY57M1fnz/Ybc64jGR59DI3nCn9X540E4vQw4="
     },
     "pdb": {
-      "SMS.App.pdb": "sha256-WYnjekH2HGn9c6uLsnjmTRNbl2tSNXtLRSQ8BBCTMGM="
+      "SMS.App.pdb": "sha256-bVmf6NIdhivDU/V6yCOz5zkud0VK+qgnEKXbA0IvgH8="
     },
     "runtimeAssets": {
       "dotnet.wasm": {

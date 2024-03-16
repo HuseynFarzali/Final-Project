@@ -1,0 +1,95 @@
+﻿@using Blazored.LocalStorage
+@using Blazored.SessionStorage
+@using SMS.App.Enums
+@using SMS.App.Models
+@using SMS.App.Tools
+@using System.Net.Http.Headers
+<!-- Form Signup -->
+<EditForm EditContext="editContext" OnValidSubmit=Register class="mb-5">
+    <DataAnnotationsValidator />
+
+    <!-- Email -->
+    <div class="form-group mb-5">
+        <label for="modalSignupEmail">
+            Email
+        </label>
+        <InputText @bind-Value="_registerModel.Email" type="email" class="form-control" id="modalSignupEmail" placeholder="student@gmail.com" />
+        <ValidationMessage For="() => _registerModel.Email" style="color:red; font-size:12.5px;" />
+    </div>
+
+    <!-- Password -->
+    <div class="form-group mb-5">
+        <label for="modalSignupPassword">
+            Password
+        </label>
+        <InputText @bind-Value=_registerModel.Password type="password" class="form-control" id="modalSignupPassword" placeholder="**********" />
+        <ValidationMessage For="() => _registerModel.Password" style="color:red; font-size:12.5px;" />
+    </div>
+
+    <div class="form-group mb-5 d-block">
+        <label for="modalSignupPasswordRetry">
+            Insert password again
+        </label>
+        <input @bind="_retryPassword" type="password" class="form-control" id="modalSignupPasswordRetry" placeholder="**********" />
+
+        @if (_registerModel.Password?.Equals(_retryPassword) is false)
+        {
+            <span class="text" style="color:red; font-size:12.5px;">Inserted passwords do not match or invalid.</span>
+        }
+    </div>
+
+    <!-- Submit -->
+    <button class="btn btn-block btn-primary @(editContext.Validate() && _registerModel.Password == _retryPassword ? "" : "disabled") transition duration-400 ease-in-out" type="submit">
+        @_submitButtonInformMessage
+    </button>
+
+    @if (_registerCall.IsFailed)
+    {
+        <span class="text" style="color:red; font-size:15px;">Register failed. Please try again.</span>
+    }
+
+</EditForm>
+
+@code {
+    private EditContext editContext = default!;
+    private RegisterRequestModel _registerModel = new();
+    private string? _retryPassword;
+    private string _submitButtonInformMessage = "Sign up";
+
+    [Inject] public HttpClient Api { get; set; } = default!;
+    [Inject] public ISessionStorageService SessionStorage { get; set; } = default!;
+    [Inject] public ILocalStorageService LocalStorage { get; set; } = default!;
+    [Inject] public NavigationManager NavManager { get; set; } = default!;
+
+    private CallResultString _registerCall = new();
+    private CallResult<AppUser> _loggedInUserCall = new();
+
+    protected override void OnInitialized()
+    {
+        editContext = new(_registerModel);
+    }
+
+    private async Task Register()
+    {
+        await _registerCall.DiagnoseAsync(await Api.PostAsJsonAsync("/api/auth/register", _registerModel));
+
+        if (!_registerCall.IsFailed)
+        {
+            Api.DefaultRequestHeaders.Authorization
+            = new AuthenticationHeaderValue("Bearer", _registerCall.StringData!);
+
+            await SessionStorage.SetItemAsStringAsync("token", _registerCall.StringData!);
+
+            await _loggedInUserCall.DiagnoseAsync(await Api.GetAsync("/api/auth/current-user"));
+
+            if (!_loggedInUserCall.IsFailed)
+            {
+                await SessionStorage.SetItemAsync<AppUser>("current-user", _loggedInUserCall.Data!);
+            }
+
+            await LocalStorage.RemoveItemsAsync(new[] { "token", "current-user" });
+
+            NavManager.NavigateTo("", forceLoad: true);
+        }
+    }
+}

@@ -17,3 +17,4 @@ C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.DAL\ob
 C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.DAL\bin\Debug\net6.0\SMS.WebTools.dll
 C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.DAL\bin\Debug\net6.0\SMS.WebTools.pdb
 C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.DAL\obj\Debug\net6.0\SMS.DAL.csproj.Up2Date
+C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.DAL\obj\Debug\net6.0\SMS.DAL.sourcelink.json

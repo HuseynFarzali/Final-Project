@@ -13,3 +13,4 @@ C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.WebToo
 C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.WebTools\bin\Debug\net6.0\SMS.Tools.dll
 C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.WebTools\bin\Debug\net6.0\SMS.Tools.pdb
 C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.WebTools\obj\Debug\net6.0\SMS.WebT.C0274432.Up2Date
+C:\Users\99450\Desktop\BackEnd_Code_Academy\Student Management System\SMS.WebTools\obj\Debug\net6.0\SMS.WebTools.sourcelink.json

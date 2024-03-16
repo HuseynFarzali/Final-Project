@@ -1,0 +1,16 @@
+﻿
+<a class="@Style" role="button" data-bs-toggle="collapse" data-bs-target="#@TargetId" aria-controls="@AriaControls" aria-expanded="false">
+    @ChildContent
+</a>
+
+@code {
+    [Parameter] public string? Style { get; set; }
+    [Parameter, EditorRequired] public string TargetId { get; set; } = default!;
+    [Parameter] public string? AriaControls { get; set; }
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        AriaControls ??= TargetId;
+    }
+}

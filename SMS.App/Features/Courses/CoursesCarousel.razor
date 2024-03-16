@@ -1,0 +1,31 @@
+﻿@using SMS.App.Models
+@implements IAsyncDisposable
+
+@foreach (var course in Courses)
+{
+    <div class="col-12 col-md-6 col-xl-4 pb-4 pb-md-7" style="padding-right:15px;padding-left:15px;">
+        <!-- Card -->
+        <CourseCard Course="course" />
+    </div>
+}
+
+@code {
+    [Parameter, EditorRequired] public IEnumerable<CourseDto> Courses { get; set; } = default!;
+    [Inject] public IJSRuntime JsRuntime { get; set; } = default!;
+
+    private IJSObjectReference? FlickityModule;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        FlickityModule = await JsRuntime.InvokeAsync<IJSObjectReference>("import", "./Content/Main/InnerComponents/HomeCoursesSection.razor.js");
+
+        await FlickityModule.InvokeVoidAsync("flickityInit2");
+        Console.WriteLine("flickity-active");
+    }
+
+    async ValueTask IAsyncDisposable.DisposeAsync()
+    {
+        if (FlickityModule is not null)
+            await FlickityModule.DisposeAsync();
+    }
+}

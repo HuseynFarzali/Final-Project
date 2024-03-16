@@ -12,12 +12,21 @@ namespace SMS.DAL.Data.Entities.Concrete
     public class Course : Entity, ISoftDeletable, IDateStample, IAuthorStample
     {
         public string Name { get; set; }
+        public string? Description { get; set; }
+        public string? Title { get; set; }
+
         public int Credit { get; set; }
 
+        public List<CourseModule>? CourseModules { get; set; }
+
         public List<CourseStudent>? CourseStudents { get; set; }
+        public List<CourseTeacher>? CourseTeachers { get; set; }
 
         public int? CategoryId { get; set; }
-        public Category? Category { get; set; }
+        public Category? Category { get; set; } 
+
+        public int? BackgroundImageId { get; set; }
+        public Image? BackgroundImage { get; set; }
 
         public bool IsDeleted { get; set; } = false;
 

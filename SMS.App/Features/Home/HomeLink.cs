@@ -4,6 +4,6 @@ namespace SMS.App.Features.Home
 {
     public class HomeLink : PageLink
     {
-        public const string HomePathRelative = "/home";
+        public const string HomePathRelative = "";
     }
 }

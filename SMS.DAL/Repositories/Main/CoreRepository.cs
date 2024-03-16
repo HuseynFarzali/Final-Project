@@ -24,6 +24,7 @@ namespace SMS.DAL.Repositories.Main
         where TEntity : Entity
         where TContext : DbContext
     {
+        //private readonly IAppAuthenticationService _authService;
         protected TContext _context;
         protected DbSet<TEntity> _entities;
 

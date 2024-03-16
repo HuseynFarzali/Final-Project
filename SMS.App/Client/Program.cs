@@ -1,7 +1,9 @@
 using Blazored.LocalStorage;
+using Blazored.SessionStorage;
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using SMS.App;
+using SMS.App.Tools;
 using System.Diagnostics;
 using System.Net.Http.Headers;
 
@@ -16,6 +18,8 @@ namespace SMS.App
             builder.RootComponents.Add<HeadOutlet>("head::after");
 
             builder.Services.AddBlazoredLocalStorage();
+            builder.Services.AddBlazoredSessionStorage();
+            builder.Services.AddScoped<UserLoader>();
 
             builder.Services.AddScoped(sp => new HttpClient
             {

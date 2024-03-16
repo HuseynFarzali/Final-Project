@@ -9,8 +9,8 @@ namespace SMS.App.Tools
         public bool Processing { get; set; } = true;
         public bool IsFailed { get; set; } = false;
 
-        public Action<TData>? OnSuccess { get; set; } = null;
-        public Action<TData>? OnFail { get; set; } = null;
+        public Action<object>? OnSuccess { get; set; } = null;
+        public Action<object>? OnFail { get; set; } = null;
 
         public async Task DiagnoseAsync(HttpResponseMessage response)
         {

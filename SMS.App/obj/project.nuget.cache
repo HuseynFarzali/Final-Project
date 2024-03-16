@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "P8f5TLXFWCoNjgXM5+0y4IA6xA3bs5mopdl2xQNOiUtem9K6Ltdw3jSRuGBxeNrfbOPqe2l73NZMCO6O2hdjqQ==",
+  "dgSpecHash": "j1nbSI2qO0nonh1IFWKdjy/Z9U5j5Brx9vf43BvIPYfcVzjm/sNWj+qGo0wQabjcCxd5TJ9JCztBkIgO+gEFWA==",
   "success": true,
   "projectFilePath": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\SMS.App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\99450\\.nuget\\packages\\blazored.localstorage\\4.5.0\\blazored.localstorage.4.5.0.nupkg.sha512",
+    "C:\\Users\\99450\\.nuget\\packages\\blazored.sessionstorage\\2.4.0\\blazored.sessionstorage.2.4.0.nupkg.sha512",
     "C:\\Users\\99450\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.26\\microsoft.aspnetcore.authorization.6.0.26.nupkg.sha512",
     "C:\\Users\\99450\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.26\\microsoft.aspnetcore.components.6.0.26.nupkg.sha512",
     "C:\\Users\\99450\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\6.0.26\\microsoft.aspnetcore.components.analyzers.6.0.26.nupkg.sha512",
@@ -12,11 +13,18 @@
     "C:\\Users\\99450\\.nuget\\packages\\microsoft.aspnetcore.components.web\\6.0.26\\microsoft.aspnetcore.components.web.6.0.26.nupkg.sha512",
     "C:\\Users\\99450\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.26\\microsoft.aspnetcore.components.webassembly.6.0.26.nupkg.sha512",
     "C:\\Users\\99450\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.devserver\\6.0.26\\microsoft.aspnetcore.components.webassembly.devserver.6.0.26.nupkg.sha512",
+    "C:\\Users\\99450\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\6.0.28\\microsoft.aspnetcore.connections.abstractions.6.0.28.nupkg.sha512",
     "C:\\Users\\99450\\.nuget\\packages\\microsoft.aspnetcore.cors\\2.1.1\\microsoft.aspnetcore.cors.2.1.1.nupkg.sha512",
     "C:\\Users\\99450\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.1.1\\microsoft.aspnetcore.http.abstractions.2.1.1.nupkg.sha512",
+    "C:\\Users\\99450\\.nuget\\packages\\microsoft.aspnetcore.http.connections.client\\6.0.28\\microsoft.aspnetcore.http.connections.client.6.0.28.nupkg.sha512",
+    "C:\\Users\\99450\\.nuget\\packages\\microsoft.aspnetcore.http.connections.common\\6.0.28\\microsoft.aspnetcore.http.connections.common.6.0.28.nupkg.sha512",
     "C:\\Users\\99450\\.nuget\\packages\\microsoft.aspnetcore.http.extensions\\2.1.1\\microsoft.aspnetcore.http.extensions.2.1.1.nupkg.sha512",
     "C:\\Users\\99450\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.1.1\\microsoft.aspnetcore.http.features.2.1.1.nupkg.sha512",
     "C:\\Users\\99450\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.26\\microsoft.aspnetcore.metadata.6.0.26.nupkg.sha512",
+    "C:\\Users\\99450\\.nuget\\packages\\microsoft.aspnetcore.signalr.client\\6.0.28\\microsoft.aspnetcore.signalr.client.6.0.28.nupkg.sha512",
+    "C:\\Users\\99450\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core\\6.0.28\\microsoft.aspnetcore.signalr.client.core.6.0.28.nupkg.sha512",
+    "C:\\Users\\99450\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\6.0.28\\microsoft.aspnetcore.signalr.common.6.0.28.nupkg.sha512",
+    "C:\\Users\\99450\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\6.0.28\\microsoft.aspnetcore.signalr.protocols.json.6.0.28.nupkg.sha512",
     "C:\\Users\\99450\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.0\\microsoft.extensions.configuration.6.0.0.nupkg.sha512",
     "C:\\Users\\99450\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\99450\\.nuget\\packages\\microsoft.extensions.configuration.binder\\6.0.0\\microsoft.extensions.configuration.binder.6.0.0.nupkg.sha512",
@@ -24,6 +32,7 @@
     "C:\\Users\\99450\\.nuget\\packages\\microsoft.extensions.configuration.json\\6.0.0\\microsoft.extensions.configuration.json.6.0.0.nupkg.sha512",
     "C:\\Users\\99450\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",
     "C:\\Users\\99450\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\99450\\.nuget\\packages\\microsoft.extensions.features\\6.0.28\\microsoft.extensions.features.6.0.28.nupkg.sha512",
     "C:\\Users\\99450\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\6.0.0\\microsoft.extensions.fileproviders.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\99450\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\6.0.0\\microsoft.extensions.fileproviders.physical.6.0.0.nupkg.sha512",
     "C:\\Users\\99450\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\6.0.0\\microsoft.extensions.filesystemglobbing.6.0.0.nupkg.sha512",
@@ -43,7 +52,8 @@
     "C:\\Users\\99450\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512",
     "C:\\Users\\99450\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "C:\\Users\\99450\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
-    "C:\\Users\\99450\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512"
+    "C:\\Users\\99450\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
+    "C:\\Users\\99450\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

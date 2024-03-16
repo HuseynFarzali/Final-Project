@@ -10,7 +10,7 @@
     <base href="/" />
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="favicon.ico">
 
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
@@ -21,21 +21,27 @@
     <link rel="stylesheet" href="assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="assets/libs/aos/dist/aos.css">
     <link rel="stylesheet" href="assets/libs/choices.js/public/assets/styles/choices.min.css">
+
     <link rel="stylesheet" href="assets/libs/flickity-fade/flickity-fade.css">
-    <link rel="stylesheet" href="assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="assets/libs/flickity/dist/flickity.min.css" media="screen">
     <link rel="stylesheet" href="assets/libs/highlightjs/styles/vs2015.css">
     <link rel="stylesheet" href="assets/libs/jarallax/dist/jarallax.css">
     <link rel="stylesheet" href="assets/libs/quill/dist/quill.core.css" />
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="assets/css/theme.min.css">
 
     <!-- App CSS -->
-    <link rel="stylesheet" href="css/app.css"/>
+    <link rel="stylesheet" href="css/app.css" />
 </head>
 
-<body style="background-color:#F6F2EE" data-aos-easing="ease-out-quad" data-aos-duration="700" data-aos-delay="0">
-    <div id="app">Loading...</div>
+<body>
+    <div id="app">
+        <p class="d-flex justify-content-center align-items-center">Loading...</p>
+    </div>
 
     <div id="blazor-error-ui">
         An unhandled error has occurred.
@@ -44,11 +50,15 @@
     </div>
 
     <!-- Libs JS -->
+    <script src="_framework/blazor.webassembly.js"></script>
+
     <script src="assets/libs/jquery/dist/jquery.min.js"></script>
     <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
     <script src="assets/libs/aos/dist/aos.js"></script>
-    <script src="assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/choices-esm.js@10.0.0-1/esm/choices-esm.js" type="module"></script>
+
     <script src="assets/libs/countup.js/dist/countUp.min.js"></script>
     <script src="assets/libs/dropzone/dist/min/dropzone.min.js"></script>
     <script src="assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
@@ -56,18 +66,25 @@
     <script src="assets/libs/highlightjs/highlight.pack.min.js"></script>
     <script src="assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
     <script src="assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
-    <script src="assets/libs/jarallax/dist/jarallax.min.js"></script>
-    <script src="assets/libs/jarallax/dist/jarallax-video.min.js"></script>
-    <script src="assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+
+    <!--<script src="assets/libs/jarallax/dist/jarallax.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/2.2.0/jarallax.min.js" integrity="sha512-SzjBVJel+vn7dcuXHmWy9UN7hK2QFO3LY1OQ57tdMakmFQ2yZpt60WUhH/lu7X65SphrUNcb19Sahe0HdjmRbg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--<script src="assets/libs/jarallax/dist/jarallax-video.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/2.2.0/jarallax-element.js" integrity="sha512-aVEomoc5G6Q5IeFikUAqF9x1Nv8Q6US7lIQiHmAIipS/u8kCID07F09bg5p7Hda24E9glUFGdvT+UwbWlvfMTA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--<script src="assets/libs/jarallax/dist/jarallax-element.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/2.2.0/jarallax-video.min.js" integrity="sha512-VPfHS1uUxxAFi3osqNz0vx/o8oCiw1bjq+g03M7y9ck5h201FD63agN6E9Vl5WZs6DpdyZ8vwUM2xs4TE7w/oA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script src="assets/libs/parallax-js/dist/parallax.min.js"></script>
     <script src="assets/libs/quill/dist/quill.min.js"></script>
     <script src="assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
     <script src="assets/libs/typed.js/lib/typed.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
     <!-- Theme JS -->
     <script src="assets/js/theme.min.js"></script>
-
-    <script src="_framework/blazor.webassembly.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.EntityFrameworkCore;
+using SMS.Authentication.Services.Contracts;
 using SMS.BLL.Data_Transfer_Objects;
 using SMS.BLL.Services.Contracts;
 using SMS.BLL.Services.Main;
@@ -26,10 +27,12 @@ namespace SMS.BLL.Services
     public class StudentCrudServiceImpl : CoreCrudServiceImpl<Student, StudentDto, StudentCreateDto, StudentUpdateDto, CoreDbContext>, IStudentCrudService
     {
         private readonly IAppUserRepository _userRepository;
+        private readonly IAppAuthenticationService _authService;
 
-        public StudentCrudServiceImpl(IMapper mapper, IRepository<Student, CoreDbContext> repository, IAppUserRepository userRepository) : base(mapper, repository)
+        public StudentCrudServiceImpl(IMapper mapper, IRepository<Student, CoreDbContext> repository, IAppUserRepository userRepository, IAppAuthenticationService authService) : base(mapper, repository)
         {
             _userRepository = userRepository;
+            _authService = authService;
         }
 
         public override async Task<Result> TryBeforeUpdate(int id, Student updatedEntity)

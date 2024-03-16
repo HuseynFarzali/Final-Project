@@ -1,0 +1,61 @@
+﻿@using SMS.App.Models
+@using SMS.App.Tools
+@implements IAsyncDisposable
+
+<!-- INSTRUCTORS
+================================================== -->
+<section class="py-5 py-md-11 bg-catskill">
+    <div class="container">
+        <div class="text-center mb-4 mb-md-7" data-aos="fade-up">
+            <h1 class="mb-1">TOP RATING INSTRUCTORS</h1>
+            <p class="font-size-lg mb-0 text-capitalize">Discover your perfect program in our courses.</p>
+        </div>
+
+        @if (_teachersCall.IsFailed is false)
+        {
+            @if (_teachersCall.Processing)
+            {
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="spinner-border text-secondary mb-1 text-center" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <div class="flickity-carousel-instructors mx-n3 mx-md-n4">
+                    @foreach (var teacher in _teachersCall.Data!.Take(6))
+                    {
+                        <TeacherCard Teacher="teacher" />
+                    }
+                </div>
+            }
+        }
+    </div>
+</section>
+
+@code {
+    [Inject] public IJSRuntime JsRuntime { get; set; } = default!;
+    [Inject] public HttpClient Api { get; set; } = default!;
+
+    private IJSObjectReference? FlickityModule;
+    private CallResult<IEnumerable<TeacherDto>> _teachersCall = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await _teachersCall.DiagnoseAsync(await Api.GetAsync("/api/teachers/all"));
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        FlickityModule = await JsRuntime.InvokeAsync<IJSObjectReference>
+        ("import", "./Content/Main/HomeInstructorsSection.razor.js");
+        await FlickityModule.InvokeVoidAsync("flickityInit3");
+    }
+
+    async ValueTask IAsyncDisposable.DisposeAsync()
+    {
+        if (FlickityModule is not null)
+            await FlickityModule.DisposeAsync();
+    }
+}

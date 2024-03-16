@@ -10,9 +10,25 @@
     [Parameter, EditorRequired] public string NavigatesTo { get; set; } = default!;
     [Parameter] public string WithRouteData { get; set; } = "/";
     [Parameter] public RenderFragment? ChildContent { get; set; }
+    [Parameter] public IReadOnlyDictionary<string, string>? Config { get; set; }
 
     protected void Navigate()
     {
-        NavManager.NavigateTo(NavigatesTo + WithRouteData);
+        NavManager.NavigateTo(NavigatesTo + WithRouteData, forceLoad: true);
+    }
+
+    private string GetAttributesFromConfig()
+    {
+        var attributes = string.Empty;
+
+        if (Config is not null)
+        {
+            foreach (var configPair in Config)
+            {
+                attributes += $"{configPair.Key}=\"{configPair.Value}\"";
+            }
+        }
+
+        return attributes;
     }
 }

@@ -1,0 +1,81 @@
+﻿@using SMS.App.Features.Categories
+@using SMS.App.Features.Shared.NavButton
+@using SMS.App.Models
+@using SMS.App.Tools
+<!-- CATEGORIES
+================================================== -->
+<section class="py-5 py-md-11">
+    <div class="container">
+        <div class="text-center mb-8">
+            <h1 class="text-uppercase mb-1">Trending Categories</h1>
+            <p class="font-size-lg mb-0 text-capitalize">Explore a variety of courses.</p>
+        </div>
+
+        @if (_categoriesCall.Processing || _categoriesWithImageSources.Count() != _categoriesCall.Data?.Count())
+        {
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="spinner-border text-secondary mb-1 text-center" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div class="row row-cols-md-3 row-cols-xl-4 mb-4">
+                @foreach (var (category, imageSrc) in _categoriesWithImageSources.Take(8))
+                {
+                    <div class="col-md mb-6">
+                        <!-- Card -->
+                        <div style="background-image: url(@imageSrc); background-repeat: no-repeat; background-size: cover; background-position: center;">
+                            <NavButton Style="card card-hover-image bg-transparent px-md-5 py-md-5 px-4 py-8 text-center position-relative h-180p text-primary" NavigatesTo="@(CategoriesLink.CategoriesPathRelative + "/" + category.Id)">
+                                <div class="my-auto">
+                                    <!-- Image -->
+                                    <div class="text-white hover-image display-4">
+                                        <i class="fas fa-bezier-curve"></i>
+                                    </div>
+
+                                    <!-- Footer -->
+                                    <div class="card-footer p-0">
+                                        <h5 class="mb-0 line-clamp-1 text-white">@category.Name</h5>
+                                        @if ((category.Courses is null || category.Courses?.Count() == 0) is false)
+                                        {
+                                            <p class="mb-0 line-clamp-1 text-white">Over @category.Courses!.Count() Courses</p>
+                                        }
+                                    </div>
+                                </div>
+                            </NavButton>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</section>
+
+@code {
+    [Inject] public HttpClient Api { get; set; } = default!;
+
+    private CallResult<IEnumerable<CategoryDto>> _categoriesCall = new();
+    private List<(CategoryDto category, string? imageSrc)> _categoriesWithImageSources = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await _categoriesCall.DiagnoseAsync(await Api.GetAsync("/api/categories/all"));
+
+        @if (_categoriesCall.IsFailed is false)
+        {
+            foreach (var category in _categoriesCall.Data!)
+            {
+                _categoriesWithImageSources.Add((category, await GetImageSourceString(category.BackgroundImageId)));
+            }
+        }
+    }
+
+    private async Task<string> GetImageSourceString(int? categoryBgImageId)
+    {
+        if (categoryBgImageId.HasValue)
+            return await (new ImageLoader(Api)).TryLoadFrom($"/api/images/{categoryBgImageId}");
+        else
+            return "assets/img/photos/no-background.png";
+    }
+}

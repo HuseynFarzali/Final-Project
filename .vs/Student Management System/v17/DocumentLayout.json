@@ -3,48 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|c:\\users\\99450\\desktop\\backend_code_academy\\student management system\\sms.app\\features\\home\\homelink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|solutionrelative:sms.app\\features\\home\\homelink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|c:\\users\\99450\\desktop\\backend_code_academy\\student management system\\sms.app\\content\\header\\mainnavbar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|solutionrelative:sms.app\\content\\header\\mainnavbar.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|c:\\users\\99450\\desktop\\backend_code_academy\\student management system\\sms.app\\tools\\callresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|solutionrelative:sms.app\\tools\\callresult.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|c:\\users\\99450\\desktop\\backend_code_academy\\student management system\\sms.app\\features\\courses\\coursecard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|solutionrelative:sms.app\\features\\courses\\coursecard.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|c:\\users\\99450\\desktop\\backend_code_academy\\student management system\\sms.app\\features\\shared\\navbutton\\navbutton.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|solutionrelative:sms.app\\features\\shared\\navbutton\\navbutton.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|c:\\users\\99450\\desktop\\backend_code_academy\\student management system\\sms.app\\content\\main\\innercomponents\\homecategoriessection.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|solutionrelative:sms.app\\content\\main\\innercomponents\\homecategoriessection.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|c:\\users\\99450\\desktop\\backend_code_academy\\student management system\\sms.app\\features\\shared\\dropbutton\\dropbutton.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|solutionrelative:sms.app\\features\\shared\\dropbutton\\dropbutton.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|c:\\users\\99450\\desktop\\backend_code_academy\\student management system\\sms.app\\content\\header\\inner components\\navigationmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|solutionrelative:sms.app\\content\\header\\inner components\\navigationmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|c:\\users\\99450\\desktop\\backend_code_academy\\student management system\\sms.app\\features\\categories\\categorydetaillink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|solutionrelative:sms.app\\features\\categories\\categorydetaillink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|c:\\users\\99450\\desktop\\backend_code_academy\\student management system\\sms.app\\features\\shared\\dropdownmenu\\dropdownmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|solutionrelative:sms.app\\features\\shared\\dropdownmenu\\dropdownmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|c:\\users\\99450\\desktop\\backend_code_academy\\student management system\\sms.app\\features\\home\\homepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|solutionrelative:sms.app\\features\\home\\homepage.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|c:\\users\\99450\\desktop\\backend_code_academy\\student management system\\sms.app\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|solutionrelative:sms.app\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{33A1657A-70C9-458B-B239-4AEED20B872F}|SMS.API\\SMS.API.csproj|c:\\users\\99450\\desktop\\backend_code_academy\\student management system\\sms.api\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{33A1657A-70C9-458B-B239-4AEED20B872F}|SMS.API\\SMS.API.csproj|solutionrelative:sms.api\\hubs\\chathub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|c:\\users\\99450\\desktop\\backend_code_academy\\student management system\\sms.app\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|solutionrelative:sms.app\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|c:\\users\\99450\\desktop\\backend_code_academy\\student management system\\sms.app\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|solutionrelative:sms.app\\wwwroot\\css\\app.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|c:\\users\\99450\\desktop\\backend_code_academy\\student management system\\sms.app\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{04CBB24F-C549-4D14-BB72-A690885478D4}|SMS.App\\SMS.App.csproj|solutionrelative:sms.app\\_imports.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -53,165 +37,105 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 420,
-          "SelectedChildIndex": 6,
+          "DockedWidth": 397,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 5,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "SMS.App\\wwwroot\\index.html",
               "ToolTip": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\wwwroot\\index.html",
               "RelativeToolTip": "SMS.App\\wwwroot\\index.html",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAAAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACYAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-03-05T07:31:32.646Z",
+              "WhenOpened": "2024-03-14T15:35:30.813Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "app.css",
-              "DocumentMoniker": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\wwwroot\\css\\app.css",
-              "RelativeDocumentMoniker": "SMS.App\\wwwroot\\css\\app.css",
-              "ToolTip": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\wwwroot\\css\\app.css",
-              "RelativeToolTip": "SMS.App\\wwwroot\\css\\app.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-03-05T08:55:20.801Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "_Imports.razor",
               "DocumentMoniker": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\_Imports.razor",
               "RelativeDocumentMoniker": "SMS.App\\_Imports.razor",
               "ToolTip": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\_Imports.razor",
               "RelativeToolTip": "SMS.App\\_Imports.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAdAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-05T14:17:25.315Z",
+              "WhenOpened": "2024-03-14T15:35:39.425Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "HomePage.razor",
-              "DocumentMoniker": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Features\\Home\\HomePage.razor",
-              "RelativeDocumentMoniker": "SMS.App\\Features\\Home\\HomePage.razor",
-              "ToolTip": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Features\\Home\\HomePage.razor",
-              "RelativeToolTip": "SMS.App\\Features\\Home\\HomePage.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-05T14:45:29.913Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DropDownMenu.razor",
-              "DocumentMoniker": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Features\\Shared\\DropDownMenu\\DropDownMenu.razor",
-              "RelativeDocumentMoniker": "SMS.App\\Features\\Shared\\DropDownMenu\\DropDownMenu.razor",
-              "ToolTip": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Features\\Shared\\DropDownMenu\\DropDownMenu.razor",
-              "RelativeToolTip": "SMS.App\\Features\\Shared\\DropDownMenu\\DropDownMenu.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-05T15:26:00.937Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HomeLink.cs",
-              "DocumentMoniker": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Features\\Home\\HomeLink.cs",
-              "RelativeDocumentMoniker": "SMS.App\\Features\\Home\\HomeLink.cs",
-              "ToolTip": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Features\\Home\\HomeLink.cs",
-              "RelativeToolTip": "SMS.App\\Features\\Home\\HomeLink.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T16:27:32.829Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CategoryDetailLink.cs",
-              "DocumentMoniker": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Features\\Categories\\CategoryDetailLink.cs",
-              "RelativeDocumentMoniker": "SMS.App\\Features\\Categories\\CategoryDetailLink.cs",
-              "ToolTip": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Features\\Categories\\CategoryDetailLink.cs",
-              "RelativeToolTip": "SMS.App\\Features\\Categories\\CategoryDetailLink.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T16:26:44.324Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 420,
-          "SelectedChildIndex": 0,
-          "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MainNavbar.razor",
-              "DocumentMoniker": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Content\\Header\\MainNavbar.razor",
-              "RelativeDocumentMoniker": "SMS.App\\Content\\Header\\MainNavbar.razor",
-              "ToolTip": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Content\\Header\\MainNavbar.razor",
-              "RelativeToolTip": "SMS.App\\Content\\Header\\MainNavbar.razor",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAQwIcCAAA5AAAA",
+              "Title": "CourseCard.razor",
+              "DocumentMoniker": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Features\\Courses\\CourseCard.razor",
+              "RelativeDocumentMoniker": "SMS.App\\Features\\Courses\\CourseCard.razor",
+              "ToolTip": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Features\\Courses\\CourseCard.razor",
+              "RelativeToolTip": "SMS.App\\Features\\Courses\\CourseCard.razor",
+              "ViewState": "AQIAAD4AAAAAAAAAAAAAAGMAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-05T14:27:40.686Z",
+              "WhenOpened": "2024-03-16T06:45:35.643Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CallResult.cs",
-              "DocumentMoniker": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Tools\\CallResult.cs",
-              "RelativeDocumentMoniker": "SMS.App\\Tools\\CallResult.cs",
-              "ToolTip": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Tools\\CallResult.cs",
-              "RelativeToolTip": "SMS.App\\Tools\\CallResult.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-05T16:47:36.358Z",
+              "Title": "HomeCategoriesSection.razor",
+              "DocumentMoniker": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Content\\Main\\InnerComponents\\HomeCategoriesSection.razor",
+              "RelativeDocumentMoniker": "SMS.App\\Content\\Main\\InnerComponents\\HomeCategoriesSection.razor",
+              "ToolTip": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Content\\Main\\InnerComponents\\HomeCategoriesSection.razor",
+              "RelativeToolTip": "SMS.App\\Content\\Main\\InnerComponents\\HomeCategoriesSection.razor",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAEYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-16T06:45:09.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainNavbar.razor",
+              "DocumentMoniker": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Content\\Header\\MainNavbar.razor",
+              "RelativeDocumentMoniker": "SMS.App\\Content\\Header\\MainNavbar.razor",
+              "ToolTip": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Content\\Header\\MainNavbar.razor",
+              "RelativeToolTip": "SMS.App\\Content\\Header\\MainNavbar.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-16T06:44:30.039Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "NavButton.razor",
-              "DocumentMoniker": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Features\\Shared\\NavButton\\NavButton.razor",
-              "RelativeDocumentMoniker": "SMS.App\\Features\\Shared\\NavButton\\NavButton.razor",
-              "ToolTip": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Features\\Shared\\NavButton\\NavButton.razor",
-              "RelativeToolTip": "SMS.App\\Features\\Shared\\NavButton\\NavButton.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABAAAAA",
+              "Title": "NavigationMenu.razor",
+              "DocumentMoniker": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Content\\Header\\Inner Components\\NavigationMenu.razor",
+              "RelativeDocumentMoniker": "SMS.App\\Content\\Header\\Inner Components\\NavigationMenu.razor",
+              "ToolTip": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Content\\Header\\Inner Components\\NavigationMenu.razor",
+              "RelativeToolTip": "SMS.App\\Content\\Header\\Inner Components\\NavigationMenu.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-05T15:07:12.404Z",
+              "WhenOpened": "2024-03-16T06:41:50.891Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "DropButton.razor",
-              "DocumentMoniker": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Features\\Shared\\DropButton\\DropButton.razor",
-              "RelativeDocumentMoniker": "SMS.App\\Features\\Shared\\DropButton\\DropButton.razor",
-              "ToolTip": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.App\\Features\\Shared\\DropButton\\DropButton.razor",
-              "RelativeToolTip": "SMS.App\\Features\\Shared\\DropButton\\DropButton.razor",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-05T15:47:35.218Z",
+              "Title": "ChatHub.cs",
+              "DocumentMoniker": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.API\\Hubs\\ChatHub.cs",
+              "RelativeDocumentMoniker": "SMS.API\\Hubs\\ChatHub.cs",
+              "ToolTip": "C:\\Users\\99450\\Desktop\\BackEnd_Code_Academy\\Student Management System\\SMS.API\\Hubs\\ChatHub.cs",
+              "RelativeToolTip": "SMS.API\\Hubs\\ChatHub.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-16T06:39:43.484Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }

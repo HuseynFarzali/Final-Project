@@ -20,6 +20,19 @@
         width: 100%;
     }*/
 
+/*.validation-message {
+    color: red;
+    font-size: 12.5px;
+}
+
+input.invalid, select.invalid, textarea.invalid {
+    border-color: red;
+}
+
+input.valid.modified, select.valid.modified, textarea.valid.modified {
+    border-color: green;
+}*/
+
 #blazor-error-ui {
     background: lightyellow;
     bottom: 0;
@@ -29,7 +42,7 @@
     padding: 0.6rem 1.25rem 0.7rem 1.25rem;
     position: fixed;
     width: 100%;
-    z-index:1000;
+    z-index: 1000;
 }
 
 #blazor-error-ui .dismiss {

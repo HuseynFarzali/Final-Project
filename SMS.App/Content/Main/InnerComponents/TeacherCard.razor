@@ -1,0 +1,60 @@
+﻿@using SMS.App.Features.Shared.NavButton
+@using SMS.App.Features.Teachers
+@using SMS.App.Models
+@using SMS.App.Tools
+<div class="col-6 col-md-4 col-lg-3 text-center py-5 text-md-left px-3 px-md-4" data-aos="fade-up" data-aos-delay="50">
+    <div class="card border shadow p-2 lift">
+        <!-- Image -->
+        <div class="card-zoom position-relative" style="max-width: 250px;">
+            <div class="card-float card-hover right-0 left-0 bottom-0 mb-4">
+                <ul class="nav mx-n4 justify-content-center">
+                    <li class="nav-item px-4">
+                        <a href="#" class="d-block text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a href="#" class="d-block text-white">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a href="#" class="d-block text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item px-4">
+                        <a href="#" class="d-block text-white">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <NavButton NavigatesTo="@(TeachersLink.TeachersPagePathRelative + $"/{Teacher.Id}")" Style="card-img sk-thumbnail img-ratio-4 card-hover-overlay coral d-block">
+                    <img class="rounded shadow-light-lg img-fluid" src="@_teacherImageSourceString"/>
+            </NavButton>
+        </div>
+
+        <!-- Footer -->
+        <div class="card-footer px-3 pt-4 pb-1">
+            <NavButton NavigatesTo="@(TeachersLink.TeachersPagePathRelative + $"/{Teacher.Id}")" Style="d-block"><h5 class="mb-0">@Teacher.Fullname</h5></NavButton>
+            <span class="font-size-d-sm">@(Teacher.InstructedCourses.FirstOrDefault()?.Name ?? "No courses instructed.")</span>
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter, EditorRequired] public TeacherDto Teacher { get; set; } = default!;
+    [Inject] public HttpClient Api { get; set; } = default!;
+
+    private string _teacherImageSourceString = string.Empty;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var imageLoader = new ImageLoader(Api);
+        int teacherImageId = -1;
+        if (Teacher.ImageId.HasValue) teacherImageId = Teacher.ImageId.Value;
+        _teacherImageSourceString = (await imageLoader.TryLoadFrom($"/api/images/{teacherImageId}")) ?? string.Empty;
+    }
+}

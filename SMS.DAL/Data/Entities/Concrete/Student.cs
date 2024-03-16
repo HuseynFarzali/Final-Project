@@ -20,6 +20,8 @@ namespace SMS.DAL.Data.Entities.Concrete
         public AppUser? AppUser { get; set; }
         public bool Bound { get; set; } = false;
 
+        public int? ImageId { get; set; }
+        public Image? Image { get; set; }
 
         public bool IsDeleted { get; set; } = false;
 

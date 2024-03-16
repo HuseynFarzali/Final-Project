@@ -1,0 +1,48 @@
+﻿@page "/account/{AppUserId:int}"
+@using SMS.App.Enums
+@using SMS.App.Features.Courses
+@using SMS.App.Features.Home
+@using SMS.App.Features.Shared.Loading
+@using SMS.App.Features.Shared.NavButton
+@using SMS.App.Models
+@using SMS.App.Tools
+
+@if (NotBound)
+{
+    <h1 class="text-danger">Your account has not been bound to any student or teacher account</h1>
+}
+
+@code {
+    [Parameter] public int AppUserId { get; set; }
+    [Inject] public UserLoader User { get; set; } = default!;
+    [Inject] public HttpClient Api { get; set; } = default!;
+    [Inject] public NavigationManager NavManager { get; set; } = default!;
+
+    private AppUser? CurrentUser;
+    private CallResult<IEnumerable<StudentDto>> _studentsCall = new();
+    private CallResult<IEnumerable<TeacherDto>> _teachersCall = new();
+    private bool NotBound = false;
+
+    protected override async Task OnInitializedAsync()
+    {
+        CurrentUser = await User.LoadCurrent();
+        await _studentsCall.DiagnoseAsync(await Api.GetAsync("/api/students/all"));
+        await _teachersCall.DiagnoseAsync(await Api.GetAsync("/api/teachers/all"));
+
+        if (CurrentUser?.UserType is UserType.Student)
+        {
+            var studentId = _studentsCall.Data!.Single(student => student.AppUserId == AppUserId).Id;
+            NavManager.NavigateTo($"/students/{studentId}");
+        }
+        else if (CurrentUser?.UserType is UserType.Teacher)
+        {
+            var teacherId = _teachersCall.Data!.Single(teacher => teacher.AppUserId == AppUserId).Id;
+            NavManager.NavigateTo($"/teachers/{teacherId}");
+        }
+        else
+        {
+            NotBound = true;
+            StateHasChanged();
+        }
+    }
+}

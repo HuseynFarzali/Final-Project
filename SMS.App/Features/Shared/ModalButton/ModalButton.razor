@@ -1,0 +1,9 @@
+﻿<a class="@Style" role="button" data-bs-toggle="modal" data-bs-target="#@ModalViewId">
+    @ChildContent
+</a>
+
+@code {
+    [Parameter] public string? Style { get; set; }
+    [Parameter, EditorRequired] public string ModalViewId { get; set; } = default!;
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+}
